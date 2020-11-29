@@ -1,0 +1,123 @@
+<!--Author: W3layouts
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
+<!DOCTYPE HTML>
+<html lang="zxx">
+   <head>
+      <title>Item Order Form Responsive Widget Template :: w3layouts</title>
+      <!-- Meta tag Keywords -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8" />
+      <meta name="keywords" content="Item Order Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"
+         />
+      <script>
+         addEventListener("load", function () {
+         	setTimeout(hideURLbar, 0);
+         }, false);
+         
+         function hideURLbar() {
+         	window.scrollTo(0, 1);
+         }
+      </script>
+      <!-- Meta tag Keywords -->
+      <!-- css files -->
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+      <!-- Style-CSS -->
+      <!-- Font-Awesome-Icons-CSS -->
+      <!-- //css files -->
+      <!-- web-fonts -->
+      <link href="//fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+      <!-- //web-fonts -->
+   </head>
+   <body>
+      <!-- title -->
+      <h1 class="header-w3ls">Item Order Form</h1>
+      <!-- //title -->
+      <!-- content -->
+      <div class="porduct-order-agile">
+         <form id="submit-form" action="">
+            <div class="form-group">
+               <p>Name</p>
+               <input type="text" name="name" placeholder="Alice Willson" required="">
+            </div>
+            <div class="form-group">
+               <p>Email </p>
+               <input type="email" placeholder="example@mail.com" required="">
+            </div>
+            <div class="form-group">
+               <p>Phone</p>
+               <input type="text" name="Phone" placeholder="123456789" required="">
+            </div>
+            <div class="main">
+               <div class="form-left-to-w3l">
+                  <p>DISTRICT</p>
+                  <input type="text" name="WRITE HERE DIS...." placeholder="" required="">
+               </div>
+               <div class="form-left-to-w3l">
+                  <p>DO YOU WANT DOMAIN</p>
+                   <select>
+                      <option>YAS</option>
+                      <OPTION>NO</OPTION>
+                   </select>
+               </div>
+            </div>
+            <div class="main">
+               <div class="form-left-to-w3l">
+                  <p>ANY SOCIAL MEDIA NAMES</p>
+                  <input type="text" name="city" placeholder="" required="">
+                  <div class="clear"></div>
+               </div>
+               <div class="form-left-to-w3l">
+                  <p>ANY COMMENT</p>
+                  <input type="text" name="state" placeholder="">
+                  <div class="clear"></div>
+               </div>
+            </div>
+            <div class="main">
+               <div class="form-left-to-w3l">
+                  <p>WHATSAPP</p>
+                  <input type="text" name="Pin code" placeholder="WHATSAPP NUMBER" required="">
+                  <div class="clear"></div>
+               </div>
+               <div class="form-left-to-w3l">
+                  <p>Select Country</p>
+                  <select class="form-control buttom">
+                     <option value="">Country
+                     </option>
+                     <option value="category2">INDIA</option>
+                     <option value="category1">OMAN</option>
+                     <option value="category3">DUBAI</option>
+                  </select>
+               </div>
+            </div>
+            <div class="order-list">   
+            <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+      </div>
+      <!-- copyright -->
+      <div class="copy">
+         <p>PLUS CO MUHAMMED JAVAD</p>
+      </div>
+      <!-- //copyright --><script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyDP_aS6ztanZNGwPy3VP4KSJSWYckWXrqIE6aO/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+  </body>
+</html>
