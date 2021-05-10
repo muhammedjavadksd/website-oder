@@ -40,20 +40,20 @@
          <form id="submit-form" action="">
             <div class="form-group">
                <p>Name</p>
-               <input type="text" name="name" placeholder="Alice Willson" required="">
+               <input type="text" name="name" placeholder="Alice Willson" required="" class="t-input">
             </div>
             <div class="form-group">
                <p>Email </p>
-               <input type="email" placeholder="example@mail.com" required="">
+               <input type="email" placeholder="example@mail.com" required="" class="t-input">
             </div>
             <div class="form-group">
                <p>Phone</p>
-               <input type="text" name="Phone" placeholder="123456789" required="">
+               <input type="text" name="Phone" placeholder="123456789" required="" class="t-input">
             </div>
             <div class="main">
                <div class="form-left-to-w3l">
                   <p>DISTRICT</p>
-                  <input type="text" name="WRITE HERE DIS...." placeholder="" required="">
+                  <input type="text" name="WRITE HERE DIS...." placeholder="" required="" class="t-input">
                </div>
                <div class="form-left-to-w3l">
                   <p>DO YOU WANT DOMAIN</p>
@@ -66,19 +66,19 @@
             <div class="main">
                <div class="form-left-to-w3l">
                   <p>ANY SOCIAL MEDIA NAMES</p>
-                  <input type="text" name="city" placeholder="" required="">
+                  <input type="text" name="city" placeholder="" required="" class="t-input">
                   <div class="clear"></div>
                </div>
                <div class="form-left-to-w3l">
                   <p>ANY COMMENT</p>
-                  <input type="text" name="state" placeholder="">
+                  <input type="text" name="state" placeholder="" class="t-input">
                   <div class="clear"></div>
                </div>
             </div>
             <div class="main">
                <div class="form-left-to-w3l">
                   <p>WHATSAPP</p>
-                  <input type="text" name="Pin code" placeholder="WHATSAPP NUMBER" required="">
+                  <input type="text" name="Pin code" placeholder="WHATSAPP NUMBER" required="" class="t-input">
                   <div class="clear"></div>
                </div>
                <div class="form-left-to-w3l">
@@ -119,5 +119,23 @@
             })
         })
     </script>
+         <script>
+  $(document).ready(function() {
+    // URL for the POST /message request
+    var url = 'https://eu43.chat-api.com/instance**********/message?token=**********';
+    var data = {
+      phone: '***********', // Recipient's phone number
+      body: 'There should be a message here', // Message
+    };
+    // Send a request when the button is clicked
+    $(".button").click(function() {
+      $.ajax(url, {
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        type: 'POST'
+      });
+    });
+  });
+</script>
   </body>
 </html>
